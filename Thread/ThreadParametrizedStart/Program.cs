@@ -31,6 +31,10 @@ namespace ThreadParametrizedStart
                                         PrintName = "Segundo parametro",
                                         Quantidade= 5}
                                 };
+            //Usar o ParameterizedThreadStart para enviar para a Thread os parametros do delegate
+
+
+
             var t = new Thread(new ParameterizedThreadStart(ThreadingMethod));
             t.Start(listaParam);
             t.Join(); 
