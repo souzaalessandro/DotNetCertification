@@ -34,6 +34,7 @@ namespace TaskAppContinusTask
                 Console.WriteLine("Completed");
             }, TaskContinuationOptions.OnlyOnRanToCompletion);
 
+            t2.Wait();
 
 
         }
