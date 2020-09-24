@@ -11,7 +11,7 @@ namespace TaskFactoryChild
             Task<Int32[]> parent = Task.Run(()=>{
                var results = new Int32[3] ;
 
-               var tf = new TaskFactory(TaskCreationOptions.AttachedToParent,TaskContinuationOptions.ExecuteSynchronously);
+               var tf = new TaskFactory(TaskCreationOptions.,TaskContinuationOptions.ExecuteSynchronously);
 
                tf.StartNew(()=> results[0] = 0);
 
